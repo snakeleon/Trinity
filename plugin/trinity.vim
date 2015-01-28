@@ -100,7 +100,7 @@ function! <SID>Trinity_InitTagList()
     " Split to the right side of the screen
     let g:Tlist_Use_Left_Window = 1
     " Set the window width
-    let g:Tlist_WinWidth = 40
+    let g:Tlist_WinWidth = 20
     " Sort by the order
     let g:Tlist_Sort_Type = "order"
     " Do not display the help info
@@ -113,7 +113,8 @@ function! <SID>Trinity_InitTagList()
     let g:Tlist_Enable_Fold_Column = 0
     " Always display one file tags
     let g:Tlist_Show_One_File = 1
-
+	" Taglist window on the left or on the right side.
+	let g:Tlist_Use_Right_Window = 0
 endfunction " }}}
 
 " Trinity_InitSourceExplorer() {{{
